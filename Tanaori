@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ตะนาวศรี ปราณบุรี รีสอร์ท โรงแรม 4 ดาวติดชายหาดในปราณบุรี พร้อมสระว่ายน้ำ ห้องอาหาร และบริการที่อบอุ่น">
+    <meta name="keywords" content="โรงแรมปราณบุรี, โรงแรมติดทะเล, ที่พักปราณบุรี, โรงแรม 4 ดาว">
+    <meta name="author" content="Tanaosri Pranburi Resort">
+    <title>ตะนาวศรี ปราณบุรี รีสอร์ท</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: url('beach-header.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0078A8;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .rooms, .facilities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .room, .facility {
+            flex: 1 1 calc(50% - 1rem);
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .room img, .facility img {
+            width: 100%;
+        }
+        .room h3, .facility h3 {
+            margin: 0;
+            background: #0078A8;
+            color: white;
+            padding: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #0078A8;
+            color: white;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .rooms, .facilities {
+                flex-direction: column;
+            }
+            .room, .facility {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ตะนาวศรี ปราณบุรี รีสอร์ท</h1>
+        <p>สัมผัสความสงบและความงดงามของชายหาดปราณบุรี</p>
+    </header>
+    <nav>
+        <a href="#about">เกี่ยวกับเรา</a>
+        <a href="#rooms">ห้องพัก</a>
+        <a href="#facilities">สิ่งอำนวยความสะดวก</a>
+        <a href="#contact">ติดต่อเรา</a>
+    </nav>
+    <section id="about">
+        <h2>เกี่ยวกับเรา</h2>
+        <p>ตะนาวศรี ปราณบุรี รีสอร์ท ตั้งอยู่ติดชายหาดปราณบุรี มอบความสงบและบริการที่อบอุ่นให้กับผู้เข้าพักทุกท่าน เหมาะสำหรับครอบครัว คู่รัก และผู้ที่ต้องการพักผ่อนอย่างแท้จริง</p>
+    </section>
+    <section id="rooms">
+        <h2>ห้องพัก</h2>
+        <div class="rooms">
+            <div class="room">
+                <img src="standard-room.jpg" alt="ห้องพักสแตนดาร์ด">
+                <h3>ห้องพักสแตนดาร์ด</h3>
+                <p>ห้องพักสะดวกสบาย พร้อมวิวสวน</p>
+            </div>
+            <div class="room">
+                <img src="deluxe-room.jpg" alt="ห้องพักดีลักซ์วิวทะเล">
+                <h3>ห้องพักดีลักซ์วิวทะเล</h3>
+                <p>เพลิดเพลินกับวิวทะเลจากระเบียงส่วนตัว</p>
+            </div>
+        </div>
+    </section>
+    <section id="facilities">
+        <h2>สิ่งอำนวยความสะดวก</h2>
+        <div class="facilities">
+            <div class="facility">
+                <img src="pool.jpg" alt="สระว่ายน้ำ">
+                <h3>สระว่ายน้ำ</h3>
+                <p>สระว่ายน้ำส่วนกลางพร้อมวิวทะเล</p>
+            </div>
+            <div class="facility">
+                <img src="restaurant.jpg" alt="ห้องอาหาร">
+                <h3>ห้องอาหาร</h3>
+                <p>บริการอาหารไทยและนานาชาติ</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>ติดต่อเรา</h2>
+        <p><strong>ที่อยู่:</strong> 123/45 ถนนปราณบุรี ตำบลปากน้ำ อำเภอปราณบุรี จังหวัดประจวบคีรีขันธ์</p>
+        <p><strong>โทรศัพท์:</strong> 081-234-5678</p>
+        <p><strong>อีเมล:</strong> contact@tanaosri.com</p>
+        <p><strong>แผนที่:</strong></p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!..." 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
+    <footer>
+        <p>&copy; 2024 ตะนาวศรี ปราณบุรี รีสอร์ท</p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
